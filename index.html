@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- font font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bài 1 : In số nguyên tố-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Thêm số</div>
+            <div class="card-body">
+              <div class="form-group d-flex justify-content-around">
+                <input
+                  id="number"
+                  type="number"
+                  class="form-control"
+                  placeholder="Nhập số N"
+                />
+              </div>
+              <button id="btnAdd" class="btn btn-success">Thêm số</button>
+            </div>
+            <div id="listNumber" class="card-footer text-muted">
+              Dãy số đã thêm:
+            </div>
+          </div>
+          <!-- 1: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold ">
+              1. Tổng số dương
+            </p>
+            <button class="btn btn-success" id="btn1">
+              Tính tổng
+            </button>
+            <div class="mt-2 fs-3" id="showInfor1"></div>
+          </div>
+          <hr />
+          <!-- 2: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold ">
+              2. Đếm số dương
+            </p>
+            <button class="btn btn-success " id="btn2">
+              Đếm số
+            </button>
+            <div class="mt-2 fs-3" id="showInfor2"></div>
+          </div>
+          <hr />
+          <!-- 3: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold">
+              3. Tìm số nhỏ nhất
+            </p>
+            <button class="btn btn-success " id="btn3">
+              Perform
+            </button>
+            <div class="mt-2 fs-3" id="showInfor3"></div>
+          </div>
+          <hr />
+          <!-- 4: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold">
+              4. Tìm số dương nhỏ nhất
+            </p>
+            <button class="btn btn-success " id="btn4">
+              Tìm số dương nhỏ nhất
+            </button>
+            <div class="mt-2 fs-3" id="showInfor4"></div>
+          </div>
+          <hr />
+          <!-- 5: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold">
+              5. Tìm số chẵn cuối cùng
+            </p>
+            <button class="btn btn-success " id="btn5">
+              Tìm số chẵn
+            </button>
+            <div class="mt-2 fs-3" id="showInfor5"></div>
+          </div>
+          <hr />
+          <!-- 6: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold">
+              6. Đổi chỗ
+            </p>
+            <div class="d-flex justify-content-center">
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Nhập vị trí 1"
+                id="ip1"
+              />
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Nhập vị trí 2"
+                id="ip2"
+              />
+            </div>
+            <button class="btn btn-success fw-bold " id="btn6">
+              Đổi chỗ
+            </button>
+            <div class="mt-2 fs-3" id="showInfor6"></div>
+          </div>
+          <hr />
+          <!-- 7: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold">
+              7. Sắp xếp tăng dần
+            </p>
+            <button class="btn btn-success" id="btn7">
+              Sắp xếp
+            </button>
+            <div class="mt-2 fs-3" id="showInfor7"></div>
+          </div>
+          <hr />
+          <!-- 8: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold">
+              8. Tìm số nguyên tố đầu tiên
+            </p>
+            <button class="btn btn-success fw-bold" id="btn8">
+              Tìm số nguyên tố
+            </button>
+            <div class="mt-2 fs-3" id="showInfor8"></div>
+          </div>
+          <hr />
+          <!-- 9: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold">
+              9. Đếm số nguyên
+            </p>
+            <button class="btn btn-success fw-bold" id="btn9">
+              Đếm số nguyên
+            </button>
+            <div class="mt-2 fs-3" id="showInfor9"></div>
+          </div>
+          <hr />
+          <!-- 10: -->
+          <div class="mt-5">
+            <p class="text-dark fw-bold">
+              10. So sánh số lượng số âm và số dương
+            </p>
+            <button class="btn btn-success fw-bold" id="btn10">
+              So sánh
+            </button>
+            <div class="mt-2 fs-3" id="showInfor10"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
